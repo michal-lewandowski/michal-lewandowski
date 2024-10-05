@@ -1,5 +1,21 @@
 <html>
-<a href="http://localhost:8892/d/inckis.php?dest=https%3A%2F%2Fwww.inis.pl%3Ftag1%3Dtest%26tag2%3Dtest2&subId5=Test5+%C4%85%C5%9B+o+ac+p+%21&subId4=Test4+%C4%85%C5%9B+o+ac+p+%21&subId3=Test3+%C4%85%C5%9B+o+ac+p+%21&subId2=Test2+%C4%85%C5%9B+o+ac+p+%21&subId1=Test1&adf=eyJzdm4xIjoxLCJzdjEiOiJCMkIsQjJDIiwic3YyIjoiTTEiLCJzdjMiOiJNMiIsInN2NCI6Ik0zIiwic3Y1IjoiS0czMyIsInN2NiI6IktHMzQiLCJzdjciOiJLRzM1In0%3D&inisTrack=d2-2-2-&oaparams=2__bannerid=9__zoneid=5__OXLCA=1__cb=30b95a1ec5__oadest=http%3A%2F%2FEjonpotig.Zo"> Test </a>
+<script>
+  // Initialize the agent at application startup.
+  // If you're using an ad blocker or Brave/Firefox, this import will not work.
+  // Please use the NPM package instead: https://t.ly/ORyXk
+  const fpPromise = import('https://openfpcdn.io/fingerprintjs/v4')
+    .then(FingerprintJS => FingerprintJS.load())
+
+  // Get the visitor identifier when you need it.
+  fpPromise
+    .then(fp => fp.get())
+    .then(result => {
+      // This is the visitor identifier:
+      const visitorId = result.visitorId
+      console.log(visitorId)
+    })
+</script>
+
 </html>
 
 
