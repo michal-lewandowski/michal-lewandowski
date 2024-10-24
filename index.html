@@ -25,7 +25,9 @@
         </script>
         <script type="text/javascript">
             new Fingerprint2().get(function(result, components) {
-                document.getElementById("chuj").innerHTML='<code>'+JSON.stringify(components)+'</code>';
+                document.getElementById("chuj").innerHTML='<code>'+JSON.stringify(result)+'</code>';
+                document.getElementById("chuj").innerHTML+='<hr>';
+                document.getElementById("chuj").innerHTML+='<code>'+JSON.stringify(components)+'</code>';
             });
         </script>
     </head>
